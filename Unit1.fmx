@@ -1,0 +1,91 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 490
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Circle1: TCircle
+    Position.X = 40.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 400.000000000000000000
+    Size.Height = 400.000000000000000000
+    Size.PlatformDefault = False
+    object Circle2: TCircle
+      Position.X = 160.000000000000000000
+      Position.Y = 320.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 80.000000000000000000
+      Size.PlatformDefault = False
+      object faRotation: TFloatAnimation
+        Enabled = True
+        Duration = 5.000000000000000000
+        Loop = True
+        PropertyName = 'RotationAngle'
+        StartValue = 0.000000000000000000
+        StopValue = 360.000000000000000000
+      end
+      object faX1: TFloatAnimation
+        AutoReverse = True
+        Enabled = True
+        Duration = 4.000000000000000000
+        Interpolation = Sinusoidal
+        Inverse = True
+        OnFinish = faX1Finish
+        PropertyName = 'Position.X'
+        StartValue = 320.000000000000000000
+        StopValue = 160.000000000000000000
+      end
+      object faX2: TFloatAnimation
+        AutoReverse = True
+        Duration = 4.000000000000000000
+        Interpolation = Sinusoidal
+        Inverse = True
+        OnFinish = faX2Finish
+        PropertyName = 'Position.X'
+        StartValue = 0.000000000000000000
+        StopValue = 160.000000000000000000
+      end
+      object faY0: TFloatAnimation
+        Enabled = True
+        Duration = 4.000000000000000000
+        Interpolation = Sinusoidal
+        OnFinish = faY0Finish
+        PropertyName = 'Position.Y'
+        StartValue = 320.000000000000000000
+        StopValue = 160.000000000000000000
+      end
+      object faY1: TFloatAnimation
+        AutoReverse = True
+        Duration = 4.000000000000000000
+        Interpolation = Sinusoidal
+        Inverse = True
+        OnFinish = faY1Finish
+        PropertyName = 'Position.Y'
+        StartValue = 0.000000000000000000
+        StopValue = 160.000000000000000000
+      end
+      object faY2: TFloatAnimation
+        AutoReverse = True
+        Duration = 4.000000000000000000
+        Interpolation = Sinusoidal
+        Inverse = True
+        OnFinish = faY2Finish
+        PropertyName = 'Position.Y'
+        StartValue = 320.000000000000000000
+        StopValue = 160.000000000000000000
+      end
+      object Rectangle2: TRectangle
+        Fill.Kind = None
+        Position.X = 20.000000000000000000
+        Position.Y = 20.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+end
