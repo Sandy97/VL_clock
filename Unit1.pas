@@ -7,6 +7,8 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Ani,
   FMX.Objects;
 
+// Добавлен на GitHUB
+
 type
   TForm1 = class(TForm)
     Circle1: TCircle;
